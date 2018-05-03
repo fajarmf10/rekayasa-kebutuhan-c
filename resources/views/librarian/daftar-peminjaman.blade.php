@@ -74,7 +74,7 @@
                         <td>Fajar Maulana Firdaus</td>
                         <td>01-05-2018</td>
                         <td>10-05-2018</td>
-                        <td><span style="color: blue">Memperpanjang</span></td>
+                        <td><span style="color: blue">Diperpanjang</span></td>
                       </tr>
                     </tbody>
                   </table>
