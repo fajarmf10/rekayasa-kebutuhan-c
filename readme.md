@@ -1,6 +1,6 @@
 ## Rekaya Kebutuhan C [InterLibrary Loan]
 
-Import database from **development** folder. The general password for all users are : ***milesaway6***
+Install using **composer**, then generate the key, import database from **development** folder, edit your **env** file, run the server. The general password for all users are : ***milesaway6***
 
 Still prototype, no back end yet.
 
