@@ -54,31 +54,31 @@
                         <th scope="row">1</th>
                         <td>Ayat-Ayat Cinta</td>
                         <td>Habiburrahman El Shirazy</td>
-                        <td><button class="btn btn-success" onclick="forward()">Pinjam</button></td>
+                        <td><button class="btn btn-raised btn-success" onclick="forward()">Pinjam</button></td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Sang Pemimpi</td>
                         <td>Andrea Hirata</td>
-                        <td><button type="button" class="btn btn-success">Pinjam</button></td>
+                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
                         <td>Supernova 3: Petir</td>
                         <td>Dewi Lestari</td>
-                        <td><button type="button" class="btn btn-success">Pinjam</button></td>
+                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
                       </tr>
                       <tr>
                         <th scope="row">4</th>
                         <td>Chrisye: Sebuah Memoar Musikal</td>
                         <td>Alberthiene Endah</td>
-                        <td><button type="button" class="btn btn-success">Pinjam</button></td>
+                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
                       </tr>
                       <tr>
                         <th scope="row">5</th>
                         <td>Ranah 3 Warna</td>
                         <td>Ahmad Fuadi</td>
-                        <td><button type="button" class="btn btn-success">Pinjam</button></td>
+                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
                       </tr>
                     </tbody>
                   </table>

@@ -61,7 +61,7 @@
                         <td>Habiburrahman El-Shirazy</td>
                         <td>21</td>
                         <td>4</td>
-                        <td><span class="row justify-content-center"><button class="btn btn-link" onclick="addStock()"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link" onclick="addStock()"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
@@ -69,7 +69,7 @@
                         <td>Andrea Hirata</td>
                         <td>10</td>
                         <td>0</td>
-                        <td><span class="row justify-content-center"><button class="btn btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
@@ -77,7 +77,7 @@
                         <td>Stephen Hawking</td>
                         <td>1</td>
                         <td>9</td>
-                        <td><span class="row justify-content-center"><button class="btn btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                     </tbody>
                   </table>

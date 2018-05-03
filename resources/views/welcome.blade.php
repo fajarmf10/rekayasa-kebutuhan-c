@@ -83,7 +83,11 @@
                 </div>
 
                 <div class="links">
-                    <p><b>Before doing your activities, please login first!</p></b>
+                  @auth
+                  <p><b>Thank you for using InterLibrary Loan</b></p>
+                  @else
+                  <p><b>Before doing your activities, please login first!</p></b>
+                  @end
                 </div>
             </div>
         </div>

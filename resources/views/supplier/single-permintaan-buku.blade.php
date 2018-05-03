@@ -39,8 +39,8 @@
                     <strong>Lama Durasi:</strong><p>2 bulan</p>
                     <br><br>
                     <div class="row justify-content-center">
-                      <button class="btn btn-primary" onclick="approve()">Approve Loan</button><span>&nbsp;&nbsp;</span>
-                      <button class="btn btn-danger" onclick="decline()">Decline Loan</button>
+                      <button class="btn btn-raised btn-primary" onclick="approve()">Approve Loan</button><span>&nbsp;&nbsp;</span>
+                      <button class="btn btn-raised btn-danger" onclick="decline()">Decline Loan</button>
                     </div>
                   </div>
             </div>

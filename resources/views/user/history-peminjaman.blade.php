@@ -46,6 +46,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Book Name</th>
                         <th scope="col">Author</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
@@ -54,19 +55,22 @@
                         <th scope="row">1</th>
                         <td>Ayat-Ayat Cinta</td>
                         <td>Habiburrahman El Shirazy</td>
-                        <td><button class="btn btn-info" onclick="perpanjang()">Perpanjang</button>  <button class="btn btn-danger" onclick="kembalikan()">Kembalikan</button></td>
+                        <td><span style="color:green">Sedang Dipinjam</span></td>
+                        <td><button class="btn btn-raised btn-info" onclick="perpanjang()">Perpanjang</button><button class="btn btn-raised btn-danger" onclick="kembalikan()">Kembalikan</button></td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Sang Pemimpi</td>
                         <td>Andrea Hirata</td>
-                        <td><button type="button" class="btn btn-info">Perpanjang</button>  <button class="btn btn-danger" onclick="forward()">Kembalikan</button></td>
+                        <td><span style="color:orange">Pending</span></td>
+                        <td><fieldset disabled><button type="button" class="btn btn-raised btn-info">Perpanjang</button><button class="btn btn-raised btn-danger" onclick="forward()">Kembalikan</button></fieldset></td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
                         <td>Supernova 3: Petir</td>
                         <td>Dewi Lestari</td>
-                        <td><button type="button" class="btn btn-info">Perpanjang</button>  <button class="btn btn-danger" onclick="forward()">Kembalikan</button></td>
+                        <td><span style="color:blue">Sudah Dikembalikan</span></td>
+                        <td><fieldset disabled><button type="button" class="btn btn-raised btn-info">Perpanjang</button><button class="btn btn-raised btn-danger" onclick="forward()">Kembalikan</button></fieldset></td>
                       </tr>
                     </tbody>
                   </table>
