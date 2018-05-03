@@ -87,7 +87,7 @@
                   <p><b>Thank you for using InterLibrary Loan</b></p>
                   @else
                   <p><b>Before doing your activities, please login first!</p></b>
-                  @end
+                  @endauth
                 </div>
             </div>
         </div>
