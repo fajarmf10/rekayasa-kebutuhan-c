@@ -49,6 +49,7 @@
                         <th scope="col">Tgl Pinjam</th>
                         <th scope="col">Tgl Kembali</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -59,22 +60,34 @@
                         <td>19-02-2018</td>
                         <td>22-02-2018</td>
                         <td><span style="color: red">Denda</span></td>
+                        <td><button class="btn btn-raised btn-primary" onclick="kembalikan()">Kembalikan</button></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="">2</a></th>
+                        <td>Organisasi Komputer</td>
+                        <td>Fajar Maulana Firdaus</td>
+                        <td>19-02-2018</td>
+                        <td>22-06-2018</td>
+                        <td><span style="color: red">-</span></td>
+                        <td><button class="btn btn-raised btn-primary" onclick="terima()">Terima</button><button class="btn btn-raised btn-danger" onclick="tolak()">Tolak</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">3</a></th>
                         <td>Sang Pemimpi</td>
                         <td>Fajar Maulana Firdaus</td>
                         <td>19-04-2018</td>
                         <td>10-05-2018</td>
                         <td><span style="color: green">Dipinjam</span></td>
+                        <td><button class="btn btn-raised btn-primary" onclick="kembalikan()">Kembalikan</button></td>
                       </tr>
                       <tr>
-                        <th scope="row"><a href="">3</a></th>
+                        <th scope="row"><a href="">4</a></th>
                         <td>Theory of Everything</td>
                         <td>Fajar Maulana Firdaus</td>
                         <td>01-05-2018</td>
                         <td>10-05-2018</td>
                         <td><span style="color: blue">Diperpanjang</span></td>
+                        <td><button class="btn btn-raised btn-primary" onclick="terima()">Terima</button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -97,4 +110,19 @@
 @endsection
 
 @section('script')
+function terima(){
+  bootbox.alert("Permintaan diterima!", function(){
+    location.href = "/home";
+  });
+}
+function tolak(){
+  bootbox.alert("Berhasil ditolak!", function(){
+    location.href = "/home";
+  });
+}
+function kembalikan(){
+  bootbox.alert("Berhasil dikembalikan!", function(){
+    location.href = "/home";
+  });
+}
 @endsection
