@@ -49,8 +49,6 @@
                     </div>
 
                     <div class="input-group justify-content-center">
-                      
-
                       <input type="text" class="form-control" placeholder="Cari Buku">
                       <div class="input-group-append">
                         <button class="btn btn-outline-secondary" type="button">Cari</button>
@@ -78,7 +76,7 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Agama</td>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RBTC</td>
                         <td>3 hari</td>
@@ -88,7 +86,7 @@
                       <tr>
                         <th scope="row">2</th>
                         <td>Agama</td>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RB Mesin</td>
                         <td>4 hari</td>
@@ -98,7 +96,7 @@
                       <tr>
                         <th scope="row">3</th>
                         <td>Agama</td>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RBTC</td>
                         <td>3 hari</td>
@@ -108,7 +106,7 @@
                       <tr>
                         <th scope="row">4</th>
                         <td>Agama</td>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RB Sipil</td>
                         <td>5 hari</td>
@@ -118,7 +116,7 @@
                       <tr>
                         <th scope="row">5</th>
                         <td>Agama</td>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RB Mesin</td>
                         <td>4 hari</td>
