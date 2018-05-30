@@ -30,6 +30,9 @@ Route::get('/cari-buku', function(){
 Route::get('/history-peminjaman', function(){
   return view('user/history-peminjaman');
 })->name('history-peminjaman');
+Route::get('/pinjam-buku', function(){
+  return view('user/pinjam-buku');
+})->name('pinjam-buku');
 Route::get('/daftar-peminjaman', function(){
   return view('librarian/daftar-peminjaman');
 })->name('daftar-peminjaman');
