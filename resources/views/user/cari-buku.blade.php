@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card">
             <div class="card-header">Menu</div>
             <div class="card-body">
@@ -27,75 +27,112 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="card">
                 <div class="card-header">Cari Buku</div>
 
                 <div class="card-body">
 
-                  <div class="input-group justify-content-end">
-                    <input type="text" class="form-control" placeholder="Search by Book Name">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button">Search</button>
+                  <!-- <div class="col-md-9"> -->
+                    <div class="input-group">
+                      <div class="dropdown">
+                        <div class="form-group">
+                          <label>Filter:</label>
+                          <select class="" name="tempat_pinjam">
+                            <option>Kategori Buku</option>
+                            <option>Judul</option>
+                            <option>Lama Peminjaman</option>
+                            <option>Denda Harian</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+
+                    <div class="input-group justify-content-center">
+                      <input type="text" class="form-control" placeholder="Cari Buku">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Cari</button>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+
 
                   <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Book Name</th>
-                        <th scope="col">Author</th>
-                        <th scope="col">Available at</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Kategori Buku</th>
+                        <th scope="col">Judul Buku</th>
+                        <th scope="col">Penulis</th>
+                        <th scope="col">Tersedia di</th>
+                        <th scope="col">Maksimal Peminjaman</th>
+                        <th scope="col">Denda Harian</th>
+                        <!-- <th scope="col">Denda Harian</th>
+                        <th scope="col">Lama Peminjaman</th> -->
+                        <th scope="col">Tindak Lanjut</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td>Agama</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
-                        <td>RBTC, RB Mesin, RB Sipil</td>
-                        <td><button class="btn btn-raised btn-success" onclick="forward()">Pinjam</button></td>
+                        <td>RBTC</td>
+                        <td>3 hari</td>
+                        <td>1000/hari</td>
+                        <td><a href="{{route('pinjam-buku')}}"><button class="btn btn-raised btn-success" onclick="">Pinjam</button></a></td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Sang Pemimpi</td>
-                        <td>Andrea Hirata</td>
-                        <td>RBTC</td>
-                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
+                        <td>Agama</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td>Habiburrahman El Shirazy</td>
+                        <td>RB Mesin</td>
+                        <td>4 hari</td>
+                        <td>500/hari</td>
+                        <td><a href="{{route('pinjam-buku')}}"><button class="btn btn-raised btn-success" onclick="">Pinjam</button></a></td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Supernova 3: Petir</td>
-                        <td>Dewi Lestari</td>
-                        <td>RB Sipil</td>
-                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
+                        <td>Agama</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td>Habiburrahman El Shirazy</td>
+                        <td>RBTC</td>
+                        <td>3 hari</td>
+                        <td>1000/hari</td>
+                        <td><a href="{{route('pinjam-buku')}}"><button class="btn btn-raised btn-success" onclick="">Pinjam</button></a></td>
                       </tr>
                       <tr>
                         <th scope="row">4</th>
-                        <td>Chrisye: Sebuah Memoar Musikal</td>
-                        <td>Alberthiene Endah</td>
-                        <td>RB Lingkungan</td>
-                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
+                        <td>Agama</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td>Habiburrahman El Shirazy</td>
+                        <td>RB Sipil</td>
+                        <td>5 hari</td>
+                        <td>2000/hari</td>
+                        <td><a href="{{route('pinjam-buku')}}"><button class="btn btn-raised btn-success" onclick="">Pinjam</button></a></td>
                       </tr>
                       <tr>
                         <th scope="row">5</th>
-                        <td>Ranah 3 Warna</td>
-                        <td>Ahmad Fuadi</td>
-                        <td>RB Kimia</td>
-                        <td><button type="button" class="btn btn-raised btn-success">Pinjam</button></td>
+                        <td>Agama</td>
+                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td>Habiburrahman El Shirazy</td>
+                        <td>RB Mesin</td>
+                        <td>4 hari</td>
+                        <td>500/hari</td>
+                        <td><a href="{{route('pinjam-buku')}}"><button class="btn btn-raised btn-success" onclick="">Pinjam</button></a></td>
                       </tr>
                     </tbody>
                   </table>
                   <div class="row justify-content-center">
                   <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Sebelumnya</a></li>
                       <li class="page-item"><a class="page-link" href="#">1</a></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
                     </ul>
                   </nav>
                 </div>
