@@ -33,13 +33,13 @@
 
                 <div class="card-body">
                   <div class="row justify-content-center">
-                    <button type="button" class="btn btn-primary" onclick="addbook()">Add New Book</button>
+                    <button type="button" class="btn btn-primary" onclick="addbook()">Tambah Buku</button>
                   </div>
                   <br>
                   <div class="input-group justify-content-end">
-                    <input type="text" class="form-control" placeholder="Search by Book Name">
+                    <input type="text" class="form-control" placeholder="Cari Berdasarkan Judul Buku">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button">Search</button>
+                      <button class="btn btn-outline-secondary" type="button">Cari</button>
                     </div>
                   </div>
 
@@ -47,16 +47,27 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Book Name</th>
-                        <th scope="col">Author</th>
+                        <th scope="col">ID Buku</th>
+                        <th scope="col">Judul Buku</th>
+                        <th scope="col">Pengarang</th>
                         <th scope="col">Jml Peminjam</th>
                         <th scope="col">Jml Tersedia</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
+                        <td>B00100</td>
+                        <td>Theory of Everything</td>
+                        <td>Stephen Hawking</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>B00123</td>
                         <td>Ayat-Ayat Cinta</td>
                         <td>Habiburrahman El-Shirazy</td>
                         <td>21</td>
@@ -64,19 +75,12 @@
                         <td><span class="row justify-content-center"><button class="btn btn-raised btn-link" onclick="addStock()"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
+                        <th scope="row">3</th>
+                        <td>B00124</td>
                         <td>Sang Pemimpi</td>
                         <td>Andrea Hirata</td>
                         <td>10</td>
                         <td>0</td>
-                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Theory of Everything</td>
-                        <td>Stephen Hawking</td>
-                        <td>1</td>
-                        <td>9</td>
                         <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                     </tbody>
@@ -84,11 +88,11 @@
                   <div class="row justify-content-center">
                   <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Sebelumnya</a></li>
                       <li class="page-item"><a class="page-link" href="#">1</a></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -102,7 +106,7 @@
 @section('script')
 function addStock(){
   bootbox.confirm({
-    message: "Do you want to add stock of this book?",
+    message: "Anda yakin ingin menambah buku?",
     buttons: {
         confirm: {
             label: 'Yes',

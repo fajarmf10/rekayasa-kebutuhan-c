@@ -33,8 +33,9 @@
 
                 <div class="card-body">
                   <li><a href="{{route("single-permintaan-buku")}}">Permintaan Buku Ayat-Ayat Cinta</a></li>
-                  <li><a href="{{route("single-permintaan-buku")}}">Permintaan Buku Theory of Everything</a></li>
-                  <li><a href="{{route("single-permintaan-buku")}}">Perpanjangan Peminjaman Buku Sang Pemimpi</a></li>
+                  <!-- <li><a href="{{route("single-permintaan-buku")}}">Permintaan Peminjaman Buku Sang Pemimpi</a> -->
+                  <li><a href="{{route("single-permintaan-buku")}}">Perpanjangan Buku Theory of Everything</a></li>
+                  </li>
                 </div>
             </div>
         </div>

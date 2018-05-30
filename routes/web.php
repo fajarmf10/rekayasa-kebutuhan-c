@@ -45,3 +45,6 @@ Route::get('/cek-permintaan-buku', function(){
 Route::get('/cek-permintaan-buku/single', function(){
   return view('supplier/single-permintaan-buku');
 })->name('single-permintaan-buku');
+Route::get('/cek-permintaan-buku/single2', function(){
+  return view('supplier/single-perpanjangan-buku');
+})->name('single-permintaan-buku');
