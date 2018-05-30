@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-2">
           <div class="card">
             <div class="card-header">Menu</div>
             <div class="card-body">
@@ -27,16 +27,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">Daftar Peminjaman</div>
 
                 <div class="card-body">
 
                   <div class="input-group justify-content-end">
-                    <input type="text" class="form-control" placeholder="Search by Book Name">
+                    <input type="text" class="form-control" placeholder="Cari Berdasarkan Judul Buku">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button">Search</button>
+                      <button class="btn btn-outline-secondary" type="button">Cari</button>
                     </div>
                   </div>
 
@@ -44,49 +44,64 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Book Name</th>
+                        <th scope="col">ID Pinjam</th>
+                        <th scope="col">Judul Buku</th>
                         <th scope="col">Peminjam</th>
                         <th scope="col">Tgl Pinjam</th>
                         <th scope="col">Tgl Kembali</th>
+                        <th scope="col">Lama Peminjaman</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Jumlah Denda</th>
                         <th scope="col">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row"><a href="">1</a></th>
+                        <td>PJ0001</td>
                         <td>Ayat-Ayat Cinta</td>
                         <td>Fajar Maulana Firdaus</td>
                         <td>19-02-2018</td>
-                        <td>22-02-2018</td>
+                        <td>23 -02-2018</td>                        
+                        <td><span style="color: red">4 hari</span></td>
                         <td><span style="color: red">Denda</span></td>
+                        <td>Rp. 1.000</td>
                         <td><button class="btn btn-raised btn-primary" onclick="kembalikan()">Kembalikan</button></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="">2</a></th>
+                        <td>PJ0002</td>
                         <td>Organisasi Komputer</td>
                         <td>Fajar Maulana Firdaus</td>
-                        <td>19-02-2018</td>
-                        <td>22-06-2018</td>
-                        <td><span style="color: red">-</span></td>
+                        <td>19-05-2018</td>
+                        <td>-</td>
+                        <td><span style="color: black">-</span></td>
+                        <td><span style="color: black">-</span></td>
+                        <td>Rp. 0</td>
                         <td><button class="btn btn-raised btn-primary" onclick="terima()">Terima</button><button class="btn btn-raised btn-danger" onclick="tolak()">Tolak</button></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="">3</a></th>
+                        <td>PJ0003</td>
                         <td>Sang Pemimpi</td>
                         <td>Fajar Maulana Firdaus</td>
-                        <td>19-04-2018</td>
-                        <td>10-05-2018</td>
+                        <td>19-05-2018</td>
+                        <td>22-05-2018</td>
+                        <td><span style="color: black">3 hari</span></td>
                         <td><span style="color: green">Dipinjam</span></td>
+                        <td>Rp. 0</td>
                         <td><button class="btn btn-raised btn-primary" onclick="kembalikan()">Kembalikan</button></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="">4</a></th>
+                        <td>PJ0004</td>
                         <td>Theory of Everything</td>
                         <td>Fajar Maulana Firdaus</td>
                         <td>01-05-2018</td>
-                        <td>10-05-2018</td>
+                        <td>03-05-2018</td>
+                        <td><span style="color: black">2 hari</span></td>
                         <td><span style="color: blue">Diperpanjang</span></td>
+                        <td>Rp. 0</td>
                         <td><button class="btn btn-raised btn-primary" onclick="terima()">Terima</button></td>
                       </tr>
                     </tbody>
@@ -94,11 +109,11 @@
                   <div class="row justify-content-center">
                   <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Sebelumnya</a></li>
                       <li class="page-item"><a class="page-link" href="#">1</a></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
                     </ul>
                   </nav>
                 </div>
