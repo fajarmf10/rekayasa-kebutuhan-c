@@ -29,22 +29,22 @@
         </div>
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Permintaan Pinjaman Buku Ayat-Ayat Cinta</div>
+                <div class="card-header">Perpanjangan Buku Theory of Everything</div>
 
                 <div class="card-body">
                     <!-- <img src="{{asset('images/aac.jpg')}}" alt="Ayat-Ayat Cinta" class="img-fluid"> -->
-                    <img src="{{asset('images/aac.jpg')}}" class="rounded mx-auto d-block" alt="aac" width=50%>
+                    <img src="{{asset('images/toe.jpg')}}" class="rounded mx-auto d-block" alt="toe" width=50%>
                     <hr>
                     <strong>Peminjam :</strong><p>Fajar Maulana Firdaus</p>
-                    <strong>Lama Durasi :</strong><p>3 hari</p>
-                    <strong>ID Buku :</strong><p>B00123</p>
-                    <strong>Judul Buku :</strong><p>Ayat-Ayat Cinta</p>
-                    <strong>Pengarang :</strong><p>Habiburrahman El Shirazy</p>
-                    <strong>Penerbit :</strong><p>Republika</p>
-                    <strong>Deskripsi :</strong><p>Novel karangan Habiburrahman El Shirazy ini, sangat laku di pasaran. Kisah seorang pria yang sedang menempuh studi di Kairo dan harus dihadapkan dengan beberapa persoalan cinta yang pelik, wajib untuk dimiliki remaja.</p>
+                    <strong>Durasi Perpanjangan :</strong><p>2 hari</p>
+                    <strong>ID Buku :</strong><p>B00100</p>
+                    <strong>Judul Buku :</strong><p>Theory of Everything</p>
+                    <strong>Pengarang :</strong><p>Stephen Hawking</p>
+                    <strong>Penerbit :</strong><p>Mizan</p>
+                    <strong>Deskripsi :</strong><p>Buku ini menceritakan tentang bagaimana sebuah teori ditemukan. Stephen Hawking merupakan ilmuwan yang sangat berbakat dalam menemukan teori.</p>
                     <br><br>
                     <div class="row justify-content-center">
-                      <button class="btn btn-primary" onclick="forward()">Forward to Supplier</button>
+                      <button class="btn btn-primary" onclick="forward()">Teruskan ke Ruang Baca Tujuan</button>
                     </div>
                   </div>
             </div>
@@ -55,7 +55,7 @@
 
 @section('script')
 function forward(){
-  bootbox.alert("Successfully forwarded to supplier!", function(){
+  bootbox.alert("Sukses diteruskan ke Ruang Baca yang dituju!", function(){
     location.href = "/home";
   });
 }

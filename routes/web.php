@@ -24,6 +24,9 @@ Route::get('/permintaan-peminjaman', function(){
 Route::get('/permintaan-peminjaman/single', function(){
   return view('librarian/single-permintaan');
 })->name('single-permintaan');
+Route::get('/permintaan-peminjaman/single2', function(){
+  return view('librarian/single-permintaan2');
+})->name('single-permintaan');
 Route::get('/cari-buku', function(){
   return view('user/cari-buku');
 })->name('cari-buku');
