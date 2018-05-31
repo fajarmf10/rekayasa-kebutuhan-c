@@ -48,7 +48,7 @@
                     <strong>Denda Harian :</strong><p>Rp. 1000</p>
                     <br><br>
                     <div class="row justify-content-center">
-                      <a href="{{route('cari-buku')}}"><button class="btn btn-primary" onclick="">Kembali</button></a>
+                      <a href="{{route('stok-buku')}}"><button class="btn btn-primary" onclick="">Kembali</button></a>
                     </div>
                   </div>
             </div>

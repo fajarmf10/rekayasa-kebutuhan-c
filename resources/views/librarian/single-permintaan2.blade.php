@@ -14,7 +14,7 @@
                 @endrole
 
                 @role('librarian')
-                <li><b><a href="{{route('permintaan-peminjaman')}}">Cek Permintaan Peminjaman</a></b></li>
+                <li><b><a href="{{route('permintaan-peminjaman')}}">Daftar Permintaan Peminjaman</a></b></li>
                 <li><a href="{{route('daftar-peminjaman')}}">Daftar Peminjaman</a></li>
                 @endrole
 
@@ -36,6 +36,7 @@
                     <img src="{{asset('images/toe.jpg')}}" class="rounded mx-auto d-block" alt="toe" width=50%>
                     <hr>
                     <strong>Peminjam :</strong><p>Fajar Maulana Firdaus</p>
+                    <strong>RB Tujuan :</strong><p>RB Sipil</p>
                     <strong>Durasi Perpanjangan :</strong><p>2 hari</p>
                     <strong>ID Buku :</strong><p>B00100</p>
                     <strong>Judul Buku :</strong><p>Theory of Everything</p>
