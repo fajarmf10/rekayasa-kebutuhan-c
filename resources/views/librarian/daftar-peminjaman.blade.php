@@ -32,9 +32,22 @@
                 <div class="card-header">Daftar Peminjaman</div>
 
                 <div class="card-body">
+                  <div class="input-group">
+                    <div class="dropdown">
+                      <div class="form-group">
+                        <label>Filter:</label>
+                        <select class="" name="tempat_pinjam">
+                          <option>ID Pinjam</option>
+                          <option>Judul</option>
+                          <option>Peminjam</option>
+                          <option>Status</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="input-group justify-content-end">
-                    <input type="text" class="form-control" placeholder="Cari Berdasarkan Judul Buku">
+                    <input type="text" class="form-control" placeholder="Cari Buku">
                     <div class="input-group-append">
                       <button class="btn btn-outline-secondary" type="button">Cari</button>
                     </div>

@@ -14,7 +14,7 @@
                 @endrole
 
                 @role('librarian')
-                <li><b><a href="{{route('permintaan-peminjaman')}}">Cek Permintaan Peminjaman</a></b></li>
+                <li><b><a href="{{route('permintaan-peminjaman')}}">Daftar Permintaan Peminjaman</a></b></li>
                 <li><a href="{{route('daftar-peminjaman')}}">Daftar Peminjaman</a></li>
                 @endrole
 

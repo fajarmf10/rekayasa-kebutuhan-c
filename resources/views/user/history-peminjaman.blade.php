@@ -58,7 +58,7 @@
                         <th scope="row">1</th>
                         <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>RB Mesin</td>
-                        <td>29 Mei 2018</td>
+                        <td>29-05-2018</td>
                         <td>3 hari</td>
                         <td>-</td>
                         <td><span style="color:green">Sedang Dipinjam</span></td>
@@ -68,7 +68,7 @@
                         <th scope="row">2</th>
                         <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>RBTC</td>
-                        <td>29 Mei 2018</td>
+                        <td>29-05-2018</td>
                         <td>3 hari</td>
                         <td>-</td>
                         <td><span style="color:orange">Tunggu konfirmasi perpanjangan</span></td>
@@ -78,7 +78,7 @@
                         <th scope="row">3</th>
                         <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>RBTC</td>
-                        <td>3 Mei 2018</td>
+                        <td>03-05-2018</td>
                         <td style="color:red">4 hari</td>
                         <td>Rp. 1000</td>
                         <td><span style="color:grey">Sudah Dikembalikan</span></td>
