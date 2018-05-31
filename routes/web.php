@@ -60,3 +60,8 @@ Route::get('/tambah-buku', function(){
   return view('supplier/tambah-buku');
 })->name('tambah-buku');
 
+
+Route::get('/detail-pinjam', function(){
+  return view('supplier/detail-pinjam-buku');
+})->name('detail-pinjam-buku');
+
