@@ -59,7 +59,7 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>B00100</td>
-                        <td>Theory of Everything</td>
+                        <td><a href="{{route('detail-pinjam-buku')}}">Theory of Everything</td>
                         <td>Stephen Hawking</td>
                         <td>1</td>
                         <td>9</td>
@@ -68,7 +68,7 @@
                       <tr>
                         <th scope="row">2</th>
                         <td>B00123</td>
-                        <td>Ayat-Ayat Cinta</td>
+                        <td><a href="{{route('detail-pinjam-buku')}}">Ayat-Ayat Cinta</td>
                         <td>Habiburrahman El-Shirazy</td>
                         <td>21</td>
                         <td>4</td>
@@ -77,7 +77,7 @@
                       <tr>
                         <th scope="row">3</th>
                         <td>B00124</td>
-                        <td>Sang Pemimpi</td>
+                        <td><a href="{{route('detail-pinjam-buku')}}">Sang Pemimpi</td>
                         <td>Andrea Hirata</td>
                         <td>10</td>
                         <td>0</td>
