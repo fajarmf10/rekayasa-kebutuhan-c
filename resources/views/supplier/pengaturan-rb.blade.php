@@ -21,7 +21,7 @@
                 @role('supplier')
                 <li><a href="{{route('stok-buku')}}">Stok Buku</a></li>
                 <li><a href="{{route('cek-permintaan-buku')}}">Cek Permintaan Buku</a></li>
-                <li><a href="{{route('pengaturan-rb')}}">Pengaturan RB</a></li>
+                <li><b><a href="{{route('pengaturan-rb')}}">Pengaturan RB</a></b></li>
                 @endrole
 
               </ul>
@@ -30,19 +30,12 @@
         </div>
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Tambah Buku</div>
+                <div class="card-header">Pengaturan RB</div>
 
                 <div class="card-body">
                   <form role="form" action="daftar-buku.php?notif=tambah" method="post">
                     <div class="box-body">
                     <div class="form-group has-feedback">
-                      <label>ID Buku</label>
-                      <input type="text" class="form-control" name="tanggal_kursus"></div>
-
-                      <div class="form-group has-feedback">
-                        <label>Judul Buku</label>
-                        <input type="text" class="form-control" name="tanggal_kursus"></div>
-                      <div class="form-group">
 
                       <div class="form-group has-feedback">
                         <label>Kategori</label>
@@ -56,45 +49,23 @@
                       </div>
 
                       <div class="form-group has-feedback">
-                        <label>Pengarang</label>
-                        <input type="text" class="form-control" name="tanggal_kursus">
-                      </div>
-                      <div class="form-group has-feedback">
-                        <label>Penerbit</label>
-                        <input type="text" class="form-control" name="tanggal_kursus">
-                      </div>
-                      
-                      <div class="form-group has-feedback">
-                        <label>Deskripsi</label>
-                        <input type="text" class="form-control" name="tanggal_kursus">
-                      </div>
-
-                      <div class="form-group has-feedback">
-                        <label>Stok Buku</label>
-                        <input type="text" class="form-control" name="tanggal_kursus">
-                      </div>
-
-                      <div class="form-group has-feedback">
-                        <label>Ruang Baca</label>
-                        <input type="text" class="form-control" name="tanggal_kursus" value="RBTC" disabled="">
-                      </div>
-                      <div class="form-group has-feedback">
                         <label>Lama Peminjaman (hari)</label>
-                        <input type="text" class="form-control" name="tanggal_kursus" value="3" disabled="">
+                        <input type="text" class="form-control" name="tanggal_kursus" value="">
                       </div>
+
                       <div class="form-group has-feedback">
                         <label>Denda Harian (rupiah)</label>
-                        <input type="text" class="form-control" name="tanggal_kursus" value="1000" disabled="">
+                        <input type="text" class="form-control" name="tanggal_kursus" value="">
                       </div>
 
                       <div class="box-footer">
-                        <button type="button" class="btn btn-raised btn-success" onclick="tambah()">Tambah</button><br><br><b><a href="{{route('stok-buku')}}" onclick="return confirm('Apakah anda yakin ingin batal tambah buku?')">Batal Tambah</a><b>
+                        <button type="button" class="btn btn-raised btn-success" onclick="atur()">Atur</button><br><br><b><a href="{{route('stok-buku')}}" onclick="return confirm('Apakah anda yakin ingin batal tambah buku?')">Batal</a><b>
                       </div>
                             
                     <!-- /.box-body -->
 
                   </form>
-
+                  
                 </div>
                 </div>
             </div>
@@ -125,9 +96,9 @@ function addStock(){
   });
 }
 
-function tambah(){
+function atur(){
   bootbox.confirm({
-    message: "Apakah kamu yakin ingin menambah buku ini?",
+    message: "Apakah kamu yakin ingin mengupdate pengaturan RB?",
     buttons: {
         confirm: {
             label: 'Ya',
@@ -140,7 +111,7 @@ function tambah(){
     },
     callback: function (result) {
         if(result==true){
-          location.href= "/stok-buku";
+          location.href= "/pengaturan-rb";
         }
     }
   });

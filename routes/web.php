@@ -64,4 +64,7 @@ Route::get('/tambah-buku', function(){
 Route::get('/detail-pinjam', function(){
   return view('supplier/detail-pinjam-buku');
 })->name('detail-pinjam-buku');
+Route::get('/pengaturan-rb', function(){
+  return view('supplier/pengaturan-rb');
+})->name('pengaturan-rb');
 

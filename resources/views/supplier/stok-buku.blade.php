@@ -21,6 +21,7 @@
                 @role('supplier')
                 <li><b><a href="{{route('stok-buku')}}">Stok Buku</a></b></li>
                 <li><a href="{{route('cek-permintaan-buku')}}">Cek Permintaan Buku</a></li>
+                <li><a href="{{route('pengaturan-rb')}}">Pengaturan RB</a></li>
                 @endrole
 
               </ul>
