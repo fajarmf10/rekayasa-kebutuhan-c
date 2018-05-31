@@ -33,7 +33,11 @@
 
                 <div class="card-body">
                   <div class="row justify-content-center">
+<<<<<<< HEAD
                     <button type="button" class="btn btn-primary" onclick="addbook()">Tambah Buku</button>
+=======
+                    <a href="{{route('tambah-buku')}}"><button type="button" class="btn btn-primary" onclick="">Tambah Buku</button></a>
+>>>>>>> revisi
                   </div>
                   <br>
                   <div class="input-group justify-content-end">
@@ -119,7 +123,7 @@ function addStock(){
     },
     callback: function (result) {
         if(result==true){
-          location.href= "/home";
+          location.href= "/";
         }
     }
   });
