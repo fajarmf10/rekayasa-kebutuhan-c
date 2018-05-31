@@ -36,6 +36,9 @@ Route::get('/history-peminjaman', function(){
 Route::get('/pinjam-buku', function(){
   return view('user/pinjam-buku');
 })->name('pinjam-buku');
+Route::get('/detail-buku', function(){
+  return view('user/detail-buku');
+})->name('detail-buku');
 Route::get('/daftar-peminjaman', function(){
   return view('librarian/daftar-peminjaman');
 })->name('daftar-peminjaman');

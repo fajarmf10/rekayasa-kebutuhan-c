@@ -56,7 +56,7 @@
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>RB Mesin</td>
                         <td>29 Mei 2018</td>
                         <td>3 hari</td>
@@ -66,7 +66,7 @@
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>RBTC</td>
                         <td>29 Mei 2018</td>
                         <td>3 hari</td>
@@ -76,7 +76,7 @@
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>RBTC</td>
                         <td>3 Mei 2018</td>
                         <td style="color:red">4 hari</td>

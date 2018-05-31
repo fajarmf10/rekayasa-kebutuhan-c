@@ -76,7 +76,7 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Agama</td>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RBTC</td>
                         <td>3 hari</td>
@@ -86,7 +86,7 @@
                       <tr>
                         <th scope="row">2</th>
                         <td>Agama</td>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RB Mesin</td>
                         <td>4 hari</td>
@@ -96,7 +96,7 @@
                       <tr>
                         <th scope="row">3</th>
                         <td>Agama</td>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RBTC</td>
                         <td>3 hari</td>
@@ -106,7 +106,7 @@
                       <tr>
                         <th scope="row">4</th>
                         <td>Agama</td>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RB Sipil</td>
                         <td>5 hari</td>
@@ -116,7 +116,7 @@
                       <tr>
                         <th scope="row">5</th>
                         <td>Agama</td>
-                        <td><a href="{{route('pinjam-buku')}}">Ayat-Ayat Cinta</a></td>
+                        <td><a href="{{route('detail-buku')}}">Ayat-Ayat Cinta</a></td>
                         <td>Habiburrahman El Shirazy</td>
                         <td>RB Mesin</td>
                         <td>4 hari</td>
