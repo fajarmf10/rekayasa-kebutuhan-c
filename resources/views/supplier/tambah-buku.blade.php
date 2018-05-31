@@ -67,6 +67,12 @@
                         <label>Deskripsi</label>
                         <input type="text" class="form-control" name="tanggal_kursus">
                       </div>
+
+                      <div class="form-group has-feedback">
+                        <label>Stok Buku</label>
+                        <input type="text" class="form-control" name="tanggal_kursus">
+                      </div>
+
                       <div class="form-group has-feedback">
                         <label>Ruang Baca</label>
                         <input type="text" class="form-control" name="tanggal_kursus" value="RBTC" disabled="">
@@ -87,10 +93,6 @@
                     <!-- /.box-body -->
 
                   </form>
-                  
-
-                  
-                  
                   
                 </div>
                 </div>

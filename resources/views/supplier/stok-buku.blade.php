@@ -33,11 +33,7 @@
 
                 <div class="card-body">
                   <div class="row justify-content-center">
-<<<<<<< HEAD
-                    <button type="button" class="btn btn-primary" onclick="addbook()">Tambah Buku</button>
-=======
                     <a href="{{route('tambah-buku')}}"><button type="button" class="btn btn-primary" onclick="">Tambah Buku</button></a>
->>>>>>> revisi
                   </div>
                   <br>
                   <div class="input-group justify-content-end">
@@ -67,7 +63,7 @@
                         <td>Stephen Hawking</td>
                         <td>1</td>
                         <td>9</td>
-                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link" onclick="addStock()"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
@@ -85,7 +81,7 @@
                         <td>Andrea Hirata</td>
                         <td>10</td>
                         <td>0</td>
-                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
+                        <td><span class="row justify-content-center"><button class="btn btn-raised btn-link" onclick="addStock()"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -110,20 +106,20 @@
 @section('script')
 function addStock(){
   bootbox.confirm({
-    message: "Anda yakin ingin menambah buku?",
+    message: "Anda yakin ingin menambah stok buku?",
     buttons: {
         confirm: {
-            label: 'Yes',
+            label: 'Ya',
             className: 'btn-success'
         },
         cancel: {
-            label: 'No',
+            label: 'Tidak',
             className: 'btn-danger'
         }
     },
     callback: function (result) {
         if(result==true){
-          location.href= "/";
+          location.href= "/tambah-buku";
         }
     }
   });
